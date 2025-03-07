@@ -1,0 +1,26 @@
+root: artifacts
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  ingested_data_path: artifacts/data_ingestion/raw_data
+  url: https://drive.google.com/file/d/1NHUR1k0Q7tFyUqWE40HQEJ2g-sTtXh7_/view?usp=sharing
+
+data_transformation:
+  raw_data_dir: artifacts/data_ingestion/raw_data/data.csv
+  transformed_data_dir: artifacts/transformed_data/
+  transformed_data: artifacts/transformed_data/transformed.csv
+
+training:
+  data: artifacts/transformed_data/transformed.csv
+  test_size: 0.15
+  random_state: 10
+  model_dir: artifacts/evaluation/models
+  encoder_dir: artifacts/encoder
+  vectorizer_dir: artifacts/vectorizer
+  array_dir: artifacts/transformed_data/arrays
+
+evaluation:
+  model_dir: artifacts/evaluation/models
+  array_dir: artifacts/transformed_data/arrays
+  report_dir: artifacts/reports/
+  best_model_dir: artifacts/evaluation/best_model

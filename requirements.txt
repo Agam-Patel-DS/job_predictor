@@ -1,0 +1,12 @@
+nltk
+pandas
+numpy
+scikit-learn
+gdown
+joblib
+pathlib
+typing
+dataclasses
+matplotlib
+seaborn
+PyYAML
