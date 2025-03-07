@@ -4,7 +4,7 @@ import logging
 
 logging.basicConfig(level=logging.INFO, format='[%(asctime)s]: %(message)s:')
 
-project_name="winequalityprediction"
+project_name="job_predictor"
 list_of_files=[
     ".github/workflows/.gitkeep",
     f"src/{project_name}/__init__.py",
